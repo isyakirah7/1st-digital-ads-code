@@ -1,0 +1,116 @@
+/*********/
+/* FONTS */
+/*********/
+
+/*@font-face {
+  font-family: "TestFont";
+  src: url("TestFont-Black.eot"); 
+  src: url("TestFont-Black.eot?#iefix") format("embedded-opentype"),
+    url("TestFont-Black.otf") format("opentype"),
+    url("TestFont-Black.ttf") format("truetype"),
+    url("TestFont-Black.woff") format("woff"),
+    url("TestFont-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+/*********/
+/* RESET */
+/*********/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "Arial";
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a img {
+    border: none;
+}
+
+#wrapper,
+#click_through {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+#wrapper {
+    color: #fff;
+    position: relative;
+    visibility: hidden;
+    background-color: #fff;
+    background-repeat: repeat;
+}
+
+#wrapper.show {
+    visibility: visible;
+}
+
+#click_through {
+    z-index: 999;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #000;
+}
+
+
+/************/
+/* ELEMENTS */
+/************/
+
+#frame1Bg,
+#frame2Bg,
+#frame3Bg
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    opacity: 0;
+}
+#logo {
+    width: 300px;
+    height: 250px;
+    opacity: 0;
+}
+
+#frame1Copy,
+#frame2Copy,
+#frame3Copy {
+    font-family: "Monsieur La Doulaise";
+    width: 100%;
+    top: 100px;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    font-weight: 700;
+}
+
+#ctaCopy {
+    width: 100px;
+    height: 28px;
+    top: 188px;
+    left: 33px;
+    padding: 5px 10px 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background-color: #864;
+    border-radius: 10px;
+    opacity: 0;
+    font-weight: 700    ;
+}
